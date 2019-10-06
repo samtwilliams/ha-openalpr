@@ -57,7 +57,7 @@ def main():
         #results = alpr.recognize_ndarray(frame)
         for i, plate in enumerate(results['results']):
             best_candidate = plate['candidates'][0]
-            print('Plate #{}: {:7s} ({:.2f}%)'.format(i, best_candidate['plate'].upper(), best_candidate['confidence']))
+            print(datetime.datetime.now() + ' Plate #{}: {:7s} ({:.2f}%)'.format(i, best_candidate['plate'].upper(), best_candidate['confidence']))
             
             #Does the plate match known plates
             if best_candidate['plate'].upper() in PLATES:
