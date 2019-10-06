@@ -14,7 +14,9 @@ When it recognises a number plate it will then enter a time out ensuring that th
 You will need to run the container with the following variables;
 
 HA_APIENDPOINT e.g. 'http://192.168.1.68:8123/api/services/script/turn_on'
+
 HA_APIPASSWORD e.g. your HA API password
+
 STREAM_SOURCE e.g. rtsp://192.168.0.60/mpeg4'
 
 ### Configure Number Plates
@@ -24,4 +26,5 @@ At present you need to configure the number plates you want recognising in the r
 ### Build & Run
 
 docker build -t openalpr .
+
 docker run openalpr:latest
