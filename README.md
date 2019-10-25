@@ -2,9 +2,9 @@
 
 This docker container is designed to read GB Number plates from a mpeg4 video stream. Please ensure your camera is either designed for number plate recognition or you have a suitably configured high specification camera. I can't offer any advice on the camera configuration as there are too many settings and too many cameras on the market.
 
-It is specifically designed called Home Assistant using the API and will execute a script called script.ANPR. Create this script in HA and put what ever automation you want in it.
+It is specifically designed to call Home Assistant using the API and will execute a script called script.ANPR. Create this script in HA and put what ever automation you want in it.
 
-When it recognises a number plate it will then enter a time out ensuring that the same number plate does not fire the script multiple times
+When it recognises a number plate it will then enter a time out ensuring that the same number plate does not fire the script multiple times. It will just as easy call another api of your choice with a few little changes.
 
 
 ## Configure
